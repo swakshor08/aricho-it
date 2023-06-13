@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.manu__bar {
+    background-color: rgb(13, 13, 53);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.logo {
+    color:rgb(231, 79, 183);
+    font-size: 45px;
+}
+
+.logo span {
+    color: blue;
+}
+
+.manu__bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.manu__bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.manu__bar ul li a {
+     text-decoration: none;
+     color:rgb(135, 222, 212);
+     font-size: 20px;
+     font-weight: bold;
+     transition:all 0.5s;
+}
+
+.manu__bar ul li a:hover {
+    color:blue;
+}
+
+.dorpdown__menu {
+    display: none;
+}
+
+.manu__bar ul li:hover .dorpdown__menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(13, 13, 53); 
+}
+
+.manu__bar ul li:hover .dorpdown__menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.manu__bar ul li:hover .dorpdown__menu ul li {
+    width: 150px;
+    /* padding:10px; */
+}
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.dorpdown__menu-2 {
+    display: none;
+}
+
+.dorpdown__menu ul li:hover .dorpdown__menu-2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: rgb(13, 13, 53) ;
+}
+
+.hero-part {
+    height: 660px;
+    background-image: url(image/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
